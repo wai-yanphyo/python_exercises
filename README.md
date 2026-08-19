@@ -1,12 +1,18 @@
 # python_exercises
 Python Exercises
-## 🏗️ Medallion Architecture
 
-The project follows the Medallion Architecture pattern, where data is progressively refined through Bronze, Silver, and Gold layers.
+flowchart TD
+    A["Raw E-Commerce Data<br/>CSV / Source Files"]
+    
+    B[" BRONZE<br/>Raw / Ingested Data<br/>Delta Tables"]
+    
+    C[" SILVER<br/>Cleaned & Structured Data<br/>Data Quality + Standardisation"]
+    
+    D[" GOLD<br/>Business-Ready Data<br/>Dimension & Fact Tables"]
+    
+    E[" Dashboard / Analytics<br/>Business Insights"]
 
-```mermaid
-flowchart LR
-    A[Source Data<br/>CSV / JSON / API] --> B[Bronze Layer<br/>Raw Data]
-    B --> C[Silver Layer<br/>Cleaned & Transformed Data]
-    C --> D[Gold Layer<br/>Business-Ready Data]
-    D --> E[Analytics / BI<br/>Reports & Dashboards]
+    A --> B
+    B -->|"Cleaning & Standardisation"| C
+    C -->|"Business Transformations"| D
+    D --> E
