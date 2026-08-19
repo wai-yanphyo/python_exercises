@@ -1,8 +1,14 @@
 # python_exercises
 Python Exercises
 
+## 🏗️ Medallion Architecture
 
-   A["Raw E-Commerce<br/>Data"]
+The project follows the **Medallion Architecture** pattern to progressively transform raw e-commerce data into clean, structured, and business-ready data.
+
+```mermaid
+flowchart TD
+
+    A["Raw E-Commerce<br/>Data"]
 
     B["BRONZE<br/><br/>Raw / Ingested<br/>Data"]
 
