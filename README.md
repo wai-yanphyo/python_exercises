@@ -1,10 +1,6 @@
 # python_exercises
 Python Exercises
 
-## 🏗️ Medallion Architecture
-
-The project follows the **Medallion Architecture** pattern to progressively transform raw e-commerce data into clean, structured, and business-ready data.
-
 ```mermaid
 flowchart TD
 
